@@ -2,10 +2,17 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
 
+gem 'sqlite3-ruby', '1.2.5', :group => :development
+
+heroku config:add BUNDLE_WITHOUT=development:test
+
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-heroku config:add BUNDLE_WITHOUT=development:test
+
+
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
